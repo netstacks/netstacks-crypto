@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/password-hashing",
+    "crates/credential-vault",
+]
+
+[workspace.package]
+edition = "2021"
+authors = ["NetStacks Team"]
+license = "MIT"
+repository = "https://github.com/netstacks/netstacks-crypto"
+rust-version = "1.75"
+
+[profile.release]
+lto = true
+codegen-units = 1

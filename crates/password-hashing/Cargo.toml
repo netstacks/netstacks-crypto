@@ -1,0 +1,15 @@
+[package]
+name = "netstacks-password-hashing"
+version = "0.1.0"
+description = "Argon2id password hashing primitives used by NetStacks"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+keywords = ["password", "hashing", "argon2", "argon2id"]
+categories = ["cryptography", "authentication"]
+
+[dependencies]
+argon2 = "0.5"

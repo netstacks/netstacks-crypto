@@ -1,0 +1,19 @@
+[package]
+name = "netstacks-credential-vault"
+version = "0.1.0"
+description = "AES-256-GCM credential vault with Argon2id key derivation, used by NetStacks"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+repository.workspace = true
+rust-version.workspace = true
+readme = "README.md"
+keywords = ["vault", "encryption", "aes-gcm", "argon2", "credentials"]
+categories = ["cryptography"]
+
+[dependencies]
+aes-gcm = "0.10"
+argon2 = "0.5"
+zeroize = { version = "1", features = ["derive"] }
+thiserror = "2"
+uuid = { version = "1", features = ["v4"] }
